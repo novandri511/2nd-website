@@ -1,0 +1,89 @@
+/* ini styling dari navigationnya */
+#navbar{
+    position: fixed;
+    border-color: rgba(0,22,22,0.4);
+    border-right: solid;
+    /* min-width: 290px; */
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+
+}
+header{
+    font-size: 2em;
+    margin: 10px;
+    text-align: center;
+}
+#main-doc header{
+    text-align: left;
+}
+#navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#navbar li{
+    list-style: none;
+    border-top: 1px solid;
+    position: relative;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: larger;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ini styling dari main documantation */
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+section article{
+    margin: 10px;
+    font-size: 1em;
+}
+section li{
+    margin: 10px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+
+/* penggunaan media */
+
+@media (max-width: 815px){
+  #navbar{
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    
+  }
+  #main-doc{
+    position: relative;
+    margin-top: 300px;
+    margin-left: 0;
+  }
+}
